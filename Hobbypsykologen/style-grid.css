@@ -1,0 +1,301 @@
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.frame {
+    width: 414px;
+    height: 896px;
+    background: #fff;
+    overflow: hidden;
+    top: 0;
+    margin: auto;
+}
+
+.header {
+    background: #D10000;
+    color: #fff;
+}
+
+.logotyp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    width: 35%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card_red {
+    width: 207px;
+    height: 269px;
+    background: rgba(209,0,0,1);
+    opacity: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card_black {
+    width: 207px;
+    height: 269px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.card_blue {
+    width: 207px;
+    height: 269px;
+    background: #02055B;
+    opacity: 1;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.card_white {
+    width: 207px;
+    height: 269px;
+    background: #F4F4F4;
+    opacity: 1;
+    overflow: hidden;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.question {
+    background:none;
+    border:none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 133px;
+    height: 169px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.question_white {
+    background:none;
+    border:none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    width: 133px;
+    height: 169px;
+    padding-top: 60px;
+}
+
+.grid_1fr {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:auto;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+.grid_2fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows:auto;
+    grid-gap: 2px;
+}
+
+footer {
+    position: fixed;
+    overflow: hidden;
+    background:#D10000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 414px;
+    height: 56px;
+    top: 840px;
+}
+
+h2 {
+    text-align: center;
+    flex: none;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.grid_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:auto;
+    padding: 0px 47px;
+}
+
+.card_black_l {
+    width: 319,23px;
+    height: 415px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid grey;
+    padding: 10px;
+    box-shadow: 5px 10px #000;
+}
+
+.question_l {
+    background:none;
+    border:none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 215px;
+    height: 210px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 83px;
+}
+
+.ghost_link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.grid_button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows:auto;
+    padding: 30px 47px;
+}
+
+.button_red {
+    width: 150px;
+    height: 45px;
+
+    background: #FF0000;
+    border: 2px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.button_green {
+    width: 150px;
+    height: 45px;
+
+    background: #15DE29;
+    border: 2px solid #15DE29;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.score {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #D10000;
+}
+
+.button_start {
+    width: 200px;
+    height: 45px;
+
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    text-align: center;
+    color: #000000;
+    margin-left:107px;
+    
+}
+
+.button_guide {
+    width: 150px;
+    height: 45px;
+    left: 132px;
+    top: 709px;
+
+    background:#D10000;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    text-align: center;
+    color:#fff;
+    margin: auto;
+    margin-left: 132px;
+}
+
+.frame_index {
+    width: 414px;
+    height: 896px;
+    background:#D10000;
+    overflow: hidden;
+    top: 0;
+    margin:auto;
+}
+
+@media screen and (max-width: 800px) {
+
+.frame {
+    width: 414px;
+    height: 896px;
+    background: #fff;
+    overflow: hidden;
+    top: 0;
+}
+
+body {
+    background-color: #fff;
+}
+}
