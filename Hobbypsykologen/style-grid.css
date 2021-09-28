@@ -348,7 +348,7 @@ h2 {
 @media screen and (max-width: 800px) {
 
 .frame {
-    position: fixed;
+    position: absolute;
     left: 0px;
 }
 
