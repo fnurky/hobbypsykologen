@@ -8,13 +8,16 @@ body {
     height: 896px;
     background: #fff;
     overflow: hidden;
-    top: 0;
     margin: auto;
 }
 
 .header {
     background: #D10000;
     color: #fff;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logotyp {
@@ -33,7 +36,7 @@ h1 {
 
 .card_red {
     width: 207px;
-    height: 269px;
+    height: 207px;
     background: rgba(209,0,0,1);
     opacity: 1;
     overflow: hidden;
@@ -43,18 +46,19 @@ h1 {
 
 .card_black {
     width: 207px;
-    height: 269px;
+    height: 207px;
     background: rgba(0,0,0,1);
     opacity: 1;
     overflow: hidden;
     color: #fff;
     display: flex;
     justify-content: center;
+
 }
 
 .card_blue {
     width: 207px;
-    height: 269px;
+    height: 207px;
     background: #02055B;
     opacity: 1;
     overflow: hidden;
@@ -65,7 +69,7 @@ h1 {
 
 .card_white {
     width: 207px;
-    height: 269px;
+    height: 207px;
     background: #F4F4F4;
     opacity: 1;
     overflow: hidden;
@@ -82,10 +86,14 @@ h1 {
     width: 133px;
     height: 169px;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 20px;
     line-height: 19px;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 100px;
+}
+
+.question:hover {
+    font-size: 30px;
 }
 
 .question_white {
@@ -94,12 +102,16 @@ h1 {
     color: #000;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 20px;
     line-height: 19px;
     text-align: center;
     width: 133px;
     height: 169px;
-    padding-top: 60px;
+    padding-top: 100px;
+}
+
+.question_white:hover {
+    font-size: 30px;
 }
 
 .grid_1fr {
@@ -125,13 +137,13 @@ footer {
     text-transform: uppercase;
     width: 414px;
     height: 56px;
-    top: 840px;
+    top: 780px;
 }
 
 h2 {
     text-align: center;
     flex: none;
-    margin: 10px 0px;
+    margin: 15px 0px;
     font-size: 15px;
     font-weight: 900;
     letter-spacing: 0.12em;
@@ -145,21 +157,32 @@ h2 {
 }
 
 .card_black_l {
-    width: 319,23px;
-    height: 415px;
+    width: 320px;
+    height: 320px;
     background: rgba(0,0,0,1);
     opacity: 1;
-    overflow: hidden;
     color: #fff;
     display: flex;
     justify-content: center;
+    border-radius: 35px;
 
     display: flex;
     justify-content: center;
 
-    border: 1px solid grey;
-    padding: 10px;
-    box-shadow: 5px 10px #000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
 }
 
 .question_l {
@@ -167,13 +190,15 @@ h2 {
     border:none;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    width: 215px;
+    width: 80%;
     height: 210px;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    padding-top: 83px;
+    padding-top: 35%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .ghost_link {
@@ -250,8 +275,16 @@ h2 {
 
     text-align: center;
     color: #000000;
-    margin-left:107px;
-    
+    margin: auto;
+    padding-top: 6px;
+
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.button_start:hover {
+    box-shadow: 0px 15px 20px #FF0000;
+    transform: translateY(-7px);
 }
 
 .button_guide {
@@ -273,7 +306,25 @@ h2 {
     text-align: center;
     color:#fff;
     margin: auto;
-    margin-left: 132px;
+}
+
+.button_next {
+    width: 180px;
+    height: 45px;
+
+    background: #000;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    text-align: center;
+    color: #fff;
+    margin: auto;
 }
 
 .frame_index {
@@ -285,17 +336,23 @@ h2 {
     margin:auto;
 }
 
+.grid_1fr_index {
+    margin-top: 11em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:auto;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
 @media screen and (max-width: 800px) {
 
 .frame {
-    width: 414px;
-    height: 896px;
-    background: #fff;
-    overflow: hidden;
-    top: 0;
+    position: fixed;
+    left: 0px;
 }
 
 body {
-    background-color: #fff;
+    background-color: #D10000;
 }
 }
