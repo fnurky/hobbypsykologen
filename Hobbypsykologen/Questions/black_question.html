@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--kod som måste finnas-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--stylesheet-->
+  <link rel="stylesheet" href="/style-grid.css">
+    <!--css syne typeface-->
+    <!--css syne typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!--titel-->
+  <title>Hobbypsykologen</title>
+</head>
+<body>
+
+<div class="frame">
+    <div class="header">
+        <a href="/index.html"><img src="/Bilder/logotyp.png" class="logotyp"></a>
+    </div>
+    
+    <div class="grid_1fr">
+        <h1>Psykologen frågar</h1>
+    </div>
+
+    <div class="grid_card">
+        <a href="black_question_2.html"><div class="card_black_l"><div class="question_l">Hur tror du att du skulle bete dig i en kidnappningssituation?</div></div></a>
+    </div>
+
+    <div class="grid_1fr">
+        <p class="score">Klicka på kortet för nästa fråga.<br>P.S. Kom ihåg att anteckna poäng.</p>
+    </div>
+
+    <div class="grid_1fr">
+        <a href="/index.html" class="button_close" onmouseover="myOverFunction()" onmouseleave="mouseLeave()" id="demo3">Avsluta spel</a>
+     </div>
+
+    <script>
+        function myOverFunction() {
+        document.getElementById("demo3").innerHTML = "Är du säker på att du vill avsluta?";
+        }
+
+        function mouseLeave() {
+        document.getElementById("demo3").innerHTML = "Avsluta spel";
+        }
+    </script>
+
+
+
+
+
+<div class="footer">
+    <h2>Ett riktigt kul middagsspel</h2>
+</div>
+
+</div>
+</body>
+
+</html>

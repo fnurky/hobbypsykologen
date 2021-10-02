@@ -12,24 +12,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <!--css syne typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <!--titel-->
   <title>Hobbypsykologen</title>
 </head>
 <body>
 <div class="frame_index">
-    <div class="header">
-        <img src="logotyp.png" style="display: block; margin-left: auto; margin-right: auto; padding-top: 2px; width: 35%;" class="animate__heartBeat">
+
+    <div class="header_index">
+        <img src="/bilder/logotyp_index.png" style="display: block; margin-left: auto; margin-right: auto; padding-top: 2px; width: 75%;" class="animate__heartBeat">
     </div>
+
     <div class="grid_1fr_index">
         <a href="color_pick.html" class="button_start">Starta spel</a><br>
-        <button class="button_guide">Guide</button>
+        <a href="Guide/guide1.html" class="button_guide">Spelregler</a>
+    </div>
+
+    <div class="grid_1fr_index">
+        <button class="button_lm" onclick="myFunction()">Light/dark mode</button>
     </div>
 
 
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("light_mode");
+    }
+    </script>
 
-<footer>
+
+<div class="footer">
     <h2>Ett riktigt kul middagsspel</h2>
-</footer>
+</div>
 
 </div>
 </body>
